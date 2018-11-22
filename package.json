@@ -1,0 +1,8 @@
+{
+    "name": "RentG01",
+    "version": "1.0.0",
+    "keywords": ["util", "functional", "server", "client", "browser"],
+    "author": "iguan",
+    "contributors": [],
+    "dependencies": {}
+}
