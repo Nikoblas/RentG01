@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>IndexedDB: Local Database with HTML5</title>
+        <script src="js/indexdDB.js"></script>            
+    </head>
+    <body onload="startDB();">
+        <input type="text" id="dni" placeholder="Enter dni" />
+        <input type="text" id="name" placeholder="Enter name" />
+        <input type="text" id="surname" placeholder="Enter surname" />
+        <button type="button" onclick="add();">Save</button>
+        <hr>
+        <div id="elements">
+            <table>
+                <caption>Persons</caption>
+                <thead>
+                    <tr>
+                        <th>DNI</th>
+                        <th>Name</th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody id="elementsList">
+                    <tr>
+                        <td colspan="3">Not elements to show</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <button type="button" onclick="loadAllByName();">Order by name</button>
+    </body>
+</html>

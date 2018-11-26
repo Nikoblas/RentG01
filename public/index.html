@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html><head>
         <meta charset="UTF-8">
         <!-- Titulo-->
@@ -8,75 +7,66 @@
         <link rel="stylesheet" href="css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Aqui meteremos todo lo de la pagina -->
-    <body  style="padding-top: 65px;">
-       <header style=" top:0; z-index:999; width:100%; margin:auto;position:fixed">
-            <nav class="navbar navbar-goldcar" role="navigation" style=" margin-bottom:0; border:0;float:left; margin:0;font-size:12px;color:#393b0a;background-color:#cfd638;border-radius:0; der:none">
-    <div class="container click-affix">
-        <div class="navbar-collapse collapse position-navbar">
-            <ul class="nav navbar-nav">
-                <li class="navbar-left hidden-xs position-logo">
-                        <a class="navbar-brand table-goldcar" href="index.html">
-                        <h1> RENT G <img  alt="RENT G" src="img/LogoRentF.png" style="width: 65px; height: 65px;"></h1>  
+    <body  style="padding-top: 65px; background-color:black;">
+       <header style=" top:0; margin:auto;position:fixed; width:100%;">
+            <nav style=" float:none;  display:inline-block; width:100%; text-align:center; height:70px; margin-bottom:0; border:0;float:left; margin:0;font-size:12px;color:#393b0a;background-color:#cfd638;border-radius:0; der:none">
+    <div class="container" >
+            <ul class="nav" style= "float:left;  margin:0; width:100%; text-align:center; float:none;  display:inline-block;vertical-align: text-top;">
+                <li style=" position:absolute; left:0">
+                    <a style="padding:0" href="index.html">
+                        <h1 style=" font-size: 65px; color: black; "> <b>RENT G </b><img  alt="RENT G" src="img/LogoRentF.png" style="width: 65px; height: 65px;"></h1>  
                     </a>
                 </li>
-                <li class="navbar-right hidden-xs upper">
-                    <a class="acceso collapsed nav-login acceso-user" href="areaclientes.html" data-toggle="collapse">
-                            <!-- Aqui es donde haremos lo de los clientes login y demas  -->
-                        <span style=" font-size: 24px; padding: 10px ">Área de Clientes</span>
+                <li style="float:right!important;  margin-right:-15px; position:fixed; right:0;vertical-align: text-top;">
+                    <a href="areaclientes.html" data-toggle="collapse" style="height:70px;background-color:#000;color:#656565">
+                        <span style=" font-size: 24px; padding: 0;">Área de Clientes</span>
                     </a>                  
                 </li>
                 <!--
-                <li class="navbar-right navbar-right--header change-location-menu hidden-xs "><a href="ayuda.html">Ayuda</a></li>            
-                <li class="navbar-right navbar-right--header change-location-menu hidden-xs "><a href="flota.html/"> Flota</a></li>
-                <li class="navbar-right navbar-right--header change-location-menu hidden-xs "><a href="oficinas.html/"> Oficinas</a></li>
-                <li class="navbar-right navbar-right--header change-location-menu hidden-xs "><a href="ofertas.html/">Ofertas</a></li> 
+                <li class="button" ><a href="ayuda.html">Ayuda</a></li>            
+                <li class="button"><a href="flota.html/"> Flota</a></li>
+                <li class="button"><a href="oficinas.html/"> Oficinas</a></li>
+                <li class="button"><a href="ofertas.html/">Ofertas</a></li> 
                 -->
             </ul>
-        </div>
     </div>
 </nav>
         </header>
         <!-- imagen de fondo -->
-        <div class="container">
-            <div class="row slider-background-home">      
-                <img id="background-home" src="https://s3-eu-west-1.amazonaws.com/%2Fgoldcar/goldcarweb/img/background_home/WG-16075--Nota-en-banners-cancelaci%C3%B3n-gratuita-ES.jpg" alt="">
-        
-            </div>
+        <div>
+                <img id="background-home" src="img/fotoPv.jpg" alt="imagen" style="width:100%; height:100%;">      
         </div>
 <!-- Buscador -->
-<div class="row buscador hidden-xs hidden-sm">
+<div class="row buscador hidden-xs hidden-sm" align="center" style="padding:15px; background-color: black;">
     <div class="col-xs-12">
         <div class="contenedor-buscador destacado">
             <div class="column-1">
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="row secciones">
-                            <div class="col-xs-12 col-md-6 texto-busqueda">
-                                <input type="text" placeholder="Recogida: Aeropuerto de...." class="pickupplace">
-                                    <span id="remove_pickupplace" class="icon-close eliminar"></span>
+                            <div class="col-xs-12 col-md-6" style="position:static;">
+                                <select>
+                                    <option style="font-size:35px;" value="vitoria">Vitoria-Gasteiz</option>
+                                    <option style="font-size:35px;" value="bilbo">Bilbo</option>
+                                    <option style="font-size:35px;" value="donosti">Donosti</option>
+                                </select>
                             </div>
-                            <div class="col-xs-12 col-md-3 padding-left-0 padding-right-0 fechas-busqueda">
-                                <ul class="list-inline lista-justificada">
-                                    <li class="  texto hidden-xs hidden-sm"><span>del</span></li>
-                                    <li class="dato_fecha"><a id="pickupdate" class="pickupdate upper" href="">19 NOV</a></li>
-                                    <li class="dato_fecha"><a id="pickuptime" class="pickuptime" href="">18:00</a></li>
-                                </ul>
+                            <div class="col-xs-12 col-md-3 padding-left-0 padding-right-0 fechas-busqueda" style="position:static;">
+                                       <p style="color:yellowgreen;">Desde el día: </p>
+                                       <input type="date" name="fechaRec">
                             </div>
-                            <div class="col-xs-12 col-md-3 padding-left-0 padding-right-0 fechas-busqueda">
-                                <ul class="list-inline lista-justificada">
-                                    <li class="  texto hidden-xs hidden-sm"><span>al</span></li>
-                                    <li><a id="dropoffdate" class="dropoffdate upper" href="">22 NOV</a></li>
-                                    <li><a id="dropofftime" class="dropofftime" href="">18:00</a></li>
-                                </ul>
+                            <div class="col-xs-12 col-md-3 padding-left-0 padding-right-0 fechas-busqueda" style="position:static;">
+                                       <p style="color:yellowgreen;">Hasta el día: </p>
+                                       <input type="date" name="fechaRec">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="column-3">
+            <div class="column-3" style="border-color:yellowgreen; border-style:solid; border-width:2px;">
                 <a id="btn-buscar" href="/reservas/disponibilidad">
                 <div class="row">
-                    <div class="col-xs-12 seccion-buscar ">
+                    <div class="col-xs-12" style="color:yellowgreen;">
                         ¡Reserva ahora!
                     </div>
                 </div>
@@ -88,41 +78,43 @@
 <!-- Opiniones -->
 <div class="row seccion-landing">
     <center>
-    <div class="row comentarios comentarios--margin" style="margin:auto; width: 60%; padding-top: 5%; ">
+    <div class="row comentarios comentarios--margin" style="margin:auto; width: 100%; padding-top: 5%;padding-bottom:65px; background-color:black; position:absolute; color:yellowgreen;">
     <div class="col-xs-12 comentarios-sides">
-        <a class="enlace_opiniones" target="_blank"> 
+        <a class="enlace_opiniones" target="_blank" style="color:inherit;"> 
             <img src="img/estrella icono.png" style=" width: 5% ; height: 5%; " >
             <img src="img/estrella icono.png" style=" width: 5% ; height: 5%; " >
             <img src="img/estrella icono.png" style=" width: 5% ; height: 5%; " >
             <img src="img/estrella icono.png" style=" width: 5% ; height: 5%; " >
             <img src="img/estrella icono.png" style=" width: 5% ; height: 5%; " >
-        <p class="linea_1">"Una web muy accesible y clara. Estoy muy satisfecho. Ha sido la primera vez que la programamos..."</p>
+            <p class="linea_1">
+                "Una web muy accesible y clara. Estamos muy satisfechos. Ha sido la primera vez que la programamos..."
+            </p>
         </a>
         <p class="linea_2">
-            Aitor Merino y Jon Allende Alquilo en Aeropuerto de Foronda. Opinión recogida el 23/10/2025.
+            Aitor Merino y Jon Allende alquilaron SEAT Ibiza en Aeropuerto de Foronda. Opinión recogida el 23/10/2025.
         </p>
     </div>
     </div>
     </center>
 </div>
         <!-- Linea de abajo -->
-        <footer style="position: fixed ; bottom: 0px ; width: 100%" >
-         <div class="footer-web no-imprimir">
-            <div class="container" >
+        <footer style="position: fixed; width: 100%; bottom:0" >
+         <div class="footer-web">
+            <div class="container" style="width:100%;">
                 <div class="col-xs-12">                  
                         <div class="footer-elem">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-3">
-                                    © 2018 RentG01.es
-                                </div>
+                            <div class="row">                                
                                 <div class="col-xs-12 col-sm-9 footer-terminos">
                                     <span><a class="a-footer" href="aviso-legal.html/">Aviso legal</a> | <a class="a-footer" href="politica-privacidad.html/">Política de privacidad</a> | <a class="a-footer" href="cookies.html/">Cookies</a> | <a class="acepta-location" target="_blank" href="https://m.rentG01.es/">RentG01 Móvil</a> </span>
-                                </div>                  
+                                </div>  
+                                <div class="col-xs-12 col-sm-9 footer-terminos">
+                                    © 2018 RentG01.es
+                                </div>
                             </div>
                         </div>
                 </div>
             </div>
          </div>
         </footer>
-</body>
+    </body>
 </html>
